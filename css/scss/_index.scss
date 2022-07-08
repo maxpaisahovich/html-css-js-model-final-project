@@ -2,3 +2,14 @@
   margin: 0;
   padding: 0;
 }
+
+.header {
+  width: 100%;
+  display: flex;
+
+  &__navigator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
