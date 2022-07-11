@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 html {
@@ -9,25 +10,28 @@ html {
 
 body {
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .header {
-  height: 7rem;
+  height: 15vh;
   width: 100%;
   background-image: linear-gradient(to right bottom, #8cbf3f, #a4c433, #bdc826, #d7ca19, #f2cc0f);
 }
-.header__nav-row {
-  display: flex;
-  justify-content: flex-start;
-  height: 100%;
-  gap: 25rem;
+.header__logo-box {
+  position: fixed;
+  top: 0;
+  left: 1rem;
 }
 .header__header-box {
-  margin-top: 1rem;
+  margin: 0 auto;
+}
+.header__logo {
+  width: 10vw;
 }
 .header__head-main {
   font-family: "Pattaya", sans-serif;
-  font-size: 5.5rem;
+  font-size: 5vw;
   font-weight: 100;
   text-transform: capitalize;
   text-align: center;
@@ -36,22 +40,43 @@ body {
 }
 
 .background {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: linear-gradient(to right top, #8cbf3f, #a4c433, #bdc826, #d7ca19, #f2cc0f);
 }
 
 .info {
-  direction: rtl;
   text-align: center;
   height: 100%;
-  display: inline-block;
-  margin-top: 10rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+.info__img-2-box {
+  margin-bottom: 5rem;
+}
+.info__img-2 {
+  height: 35vh;
 }
 .info__heading-info {
-  margin-bottom: 5rem;
-  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  font-size: 3.5vw;
+  font-family: "Henny Penny", cursive;
+  text-transform: capitalize;
+  font-weight: 100;
+  color: rgba(159, 86, 215, 0.99);
+  text-shadow: rgb(0, 204, 41) 2px 2px 2px;
 }
+.info__info-p {
+  font-size: 1.5vw;
+  font-family: "Roboto", sans-serif;
+  padding: 3rem;
+  font-weight: 300;
+}
+
 .navigation__checkbox {
   display: none;
 }
@@ -104,7 +129,7 @@ body {
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-family: "Henny Penny", cursive;
-  font-size: 3rem;
+  font-size: 3vw;
   padding: 0.5rem 1rem;
   color: #f2f2f2;
   text-decoration: none;
@@ -170,5 +195,5 @@ body {
   transform: rotate(-135deg);
 }
 .navigation__bats {
-  width: 4rem;
+  width: 4vw;
 }/*# sourceMappingURL=main.css.map */
