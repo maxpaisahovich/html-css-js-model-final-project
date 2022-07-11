@@ -28,6 +28,7 @@ body {
     position: fixed;
     top: 0;
     left: 1rem;
+    z-index: 9999;
   }
 
   &__header-box {
@@ -46,6 +47,21 @@ body {
     text-align: center;
     color: rgba(159, 86, 215, 0.99);
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
+    animation: moveInLeft 1s ease-out;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40rem);
+  }
+  80% {
+    transform: translateX(1.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -67,6 +83,8 @@ body {
 }
 
 .info {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   height: 100%;
   width: 100%;
@@ -80,21 +98,89 @@ body {
     height: 35vh;
   }
 
+  &__heading-box1 {
+    margin: 0 auto;
+    width: 50%;
+  }
+
   &__heading-info {
     margin-bottom: 1rem;
     font-size: 3.5vw;
-
     font-family: $head-font-1;
     text-transform: capitalize;
     font-weight: 100;
     color: rgba(159, 86, 215, 0.99);
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
-  }
+    text-align: center;
 
-  &__info-p {
-    font-size: 1.5vw;
-    font-family: $body-font;
-    padding: 3rem;
-    font-weight: 300;
+    span {
+      letter-spacing: -0.2em;
+    }
+  }
+}
+
+.info-p {
+  font-size: 1.5vw;
+  font-family: $body-font;
+  padding: 3rem;
+  font-weight: 300;
+}
+
+.blur:hover span {
+  animation: blur 1s infinite;
+  transform-origin: center center;
+  display: inline-block;
+}
+
+.blur span:nth-child(1) {
+  animation-delay: 0s;
+}
+.blur span:nth-child(2) {
+  animation-delay: 0.075s;
+}
+.blur span:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.blur span:nth-child(4) {
+  animation-delay: 0.225s;
+}
+.blur span:nth-child(5) {
+  animation-delay: 0.3s;
+}
+.blur span:nth-child(6) {
+  animation-delay: 0.375s;
+}
+.blur span:nth-child(7) {
+  animation-delay: 0.45s;
+}
+.blur span:nth-child(8) {
+  animation-delay: 0.525s;
+}
+.blur span:nth-child(9) {
+  animation-delay: 0.6s;
+}
+.blur span:nth-child(10) {
+  animation-delay: 0.675s;
+}
+.blur span:nth-child(11) {
+  animation-delay: 0.745s;
+}
+.blur span:nth-child(12) {
+  animation-delay: 0.825s;
+}
+
+@keyframes blur {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    filter: blur(3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
