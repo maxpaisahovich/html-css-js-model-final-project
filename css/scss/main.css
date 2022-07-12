@@ -89,6 +89,7 @@ body {
 }
 .info__img-2-box {
   margin-bottom: 5rem;
+  width: auto;
 }
 .info__img-2 {
   width: 40vw;
