@@ -22,7 +22,7 @@ body {
   position: fixed;
   top: 0;
   left: 1rem;
-  z-index: 9999;
+  z-index: 9998;
 }
 .header__header-box {
   margin: 0 auto;
@@ -229,7 +229,12 @@ body {
   text-shadow: rgb(0, 204, 41) 2px 2px 2px;
   text-align: center;
 }
+.sponsors__heading-text span {
+  letter-spacing: -0.2em;
+}
 .sponsors__sponsor-container {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -241,10 +246,9 @@ body {
   height: 45vh;
   width: 15vw;
   background-color: rgba(242, 204, 15, 0.6);
-  font-size: 1.5rem;
   padding: 5rem 0.5rem;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 1.5rem;
   box-shadow: 0 1.5rem 4rem rgba(13, 13, 13, 0.4);
   transition: transform 0.3s;
 }
@@ -253,14 +257,22 @@ body {
 }
 .sponsors__heading-card {
   font-family: "Pattaya", sans-serif;
+  font-size: 1.8vw;
 }
 .sponsors__card-text {
   font-family: "Roboto", sans-serif;
   font-size: 1.4vw;
+  font-weight: 100;
 }
 .sponsors__icon {
-  height: 6vh;
-  margin-bottom: 0.5rem;
+  height: 10vh;
+  width: 6vw;
+  margin-bottom: 10vh;
+}
+
+.clip-path {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 .navigation__checkbox {
@@ -686,4 +698,50 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(13, 13, 13, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup__box {
+  width: 35%;
+  height: 45vh;
+  background-color: #f2f2f2;
+  box-shadow: 0 2rem 4rem rgba(13, 13, 13, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.popup__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  gap: 2.5rem;
+  overflow: hidden;
+}
+.popup__img {
+  margin: 0 auto;
+  width: 14vh;
+}
+.popup__heading {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 100;
+  font-size: 2vw;
+}
+.popup__paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2vw;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }/*# sourceMappingURL=main.css.map */

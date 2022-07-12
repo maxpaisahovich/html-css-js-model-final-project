@@ -1,0 +1,54 @@
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-black, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+
+  &__box {
+    width: 35%;
+    height: 45vh;
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    gap: 2.5rem;
+    overflow: hidden;
+  }
+
+  &__img {
+    margin: 0 auto;
+    width: 14vh;
+  }
+
+  &__heading {
+    font-family: $head-font-2;
+    font-weight: 100;
+    font-size: 2vw;
+  }
+
+  &__paragraph {
+    font-family: $body-font;
+    font-size: 1.2vw;
+    hyphens: auto;
+  }
+
+  &__btn {
+  }
+}
+.btn-green {
+}

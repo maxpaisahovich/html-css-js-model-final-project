@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   min-height: 100vh;
   box-sizing: border-box;
@@ -28,7 +29,7 @@ body {
     position: fixed;
     top: 0;
     left: 1rem;
-    z-index: 9999;
+    z-index: 9998;
   }
 
   &__header-box {
@@ -203,9 +204,15 @@ body {
     color: rgba(159, 86, 215, 0.99);
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
     text-align: center;
+
+    span {
+      letter-spacing: -0.2em;
+    }
   }
 
   &__sponsor-container {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -218,10 +225,9 @@ body {
     height: 45vh;
     width: 15vw;
     background-color: rgba($color-yellow, 0.6);
-    font-size: 1.5rem;
     padding: 5rem 0.5rem;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 1.5rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     transition: transform 0.3s;
 
@@ -232,13 +238,20 @@ body {
 
   &__heading-card {
     font-family: $head-font-2;
+    font-size: 1.8vw;
   }
   &__card-text {
     font-family: $body-font;
     font-size: 1.4vw;
+    font-weight: 100;
   }
   &__icon {
-    height: 6vh;
-    margin-bottom: 0.5rem;
+    height: 10vh;
+    width: 6vw;
+    margin-bottom: 10vh;
   }
+}
+
+.clip-path {
+  clip-path: circle(50% at 50% 50%);
 }
