@@ -8,11 +8,36 @@
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.3s;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link,
+    :visited {
+      color: $color-black;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      font-size: 3vw;
+      text-decoration: none;
+    }
+  }
 
   &__box {
     width: 35%;
-    height: 45vh;
-    background-color: $color-white;
+    height: 50vh;
+    background-image: linear-gradient(
+      to right top,
+      #8cbf3f,
+      #a4c433,
+      #bdc826,
+      #d7ca19,
+      #f2cc0f
+    );
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     position: absolute;
     top: 50%;
@@ -26,7 +51,7 @@
     flex-direction: column;
     text-align: center;
     padding: 1rem;
-    gap: 2.5rem;
+    gap: 4vh;
     overflow: hidden;
   }
 
@@ -38,7 +63,9 @@
   &__heading {
     font-family: $head-font-2;
     font-weight: 100;
-    font-size: 2vw;
+    font-size: 1.7vw;
+    color: rgba(159, 86, 215, 0.99);
+    text-shadow: rgb(0, 204, 41) 2px 2px 2px;
   }
 
   &__paragraph {
@@ -48,7 +75,62 @@
   }
 
   &__btn {
+    &,
+    &:link,
+    &:visited {
+      margin: 0 auto;
+      margin-top: 3vh;
+      width: 15vw;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1vh 2vw;
+      display: inline-block;
+      border-radius: 10rem;
+      transition: all 0.2s;
+      position: relative;
+      font-family: $body-font;
+      font-size: 1.4vw;
+      border: none;
+      cursor: pointer;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      z-index: -1;
+      transition: all 0.4s;
+    }
   }
 }
-.btn-green {
+
+.color {
+  background-color: $color-purple;
+  color: $color-light-green;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px $color-purple;
+
+  &::after {
+    background-color: $color-purple;
+  }
 }

@@ -282,7 +282,7 @@
           <span class="dot" onclick="currentSlide(5)"></span>
         </div>
       </section>
-      <section class="sponsors">
+      <section class="sponsors" id="sponsors">
         <div class="sponsors__heading-box">
           <h2 class="sponsors__heading-text dance">
             <span>T</span>
@@ -316,14 +316,16 @@
           </h2>
         </div>
         <div class="sponsors__sponsor-container">
-          <div class="sponsors__sponsor-card" id="button">
-            <img
-              src="imges/icons/card-icons/300px-גולדסטאר.svg.png"
-              alt="goldStar-icon"
-              class="sponsors__icon"
-            />
-            <h3 class="sponsors__heading-card">Goldstar</h3>
-          </div>
+          <a href="#popup" class="sponsors__pop"
+            ><div class="sponsors__sponsor-card">
+              <img
+                src="imges/icons/card-icons/300px-גולדסטאר.svg.png"
+                alt="goldStar-icon"
+                class="sponsors__icon"
+              />
+              <h3 class="sponsors__heading-card">Goldstar</h3>
+            </div></a
+          >
           <div class="sponsors__sponsor-card">
             <img
               src="imges/icons/card-icons/450px-בורגראנץ'.svg.png"
@@ -375,9 +377,10 @@
         </div>
       </section>
     </main>
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__box">
         <div class="popup__content">
+          <a href="#sponsors" class="popup__close">&times;</a>
           <img
             src="imges/icons/card-icons/300px-גולדסטאר.svg.png"
             alt="goldsatr-logo"
@@ -389,7 +392,7 @@
             Israel. It is marketed as a dark lager beer, though it is amber in
             appearance.
           </p>
-          <a href="#" class="popup__btn btn-green">Visit us</a>
+          <a href="#" class="popup__btn color">Visit us</a>
         </div>
       </div>
     </div>

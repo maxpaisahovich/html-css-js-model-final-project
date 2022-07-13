@@ -210,6 +210,10 @@ body {
     }
   }
 
+  &__pop {
+    text-decoration: none;
+  }
+
   &__sponsor-container {
     height: 100%;
     width: 100%;
@@ -239,6 +243,8 @@ body {
   &__heading-card {
     font-family: $head-font-2;
     font-size: 1.8vw;
+    color: rgba(159, 86, 215, 0.99);
+    text-shadow: rgb(0, 204, 41) 2px 2px 2px;
   }
   &__card-text {
     font-family: $body-font;
