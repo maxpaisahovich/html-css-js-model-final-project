@@ -85,10 +85,10 @@ body {
   text-align: center;
   height: 100%;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 2vh;
 }
 .info__img-2-box {
-  margin-bottom: 5rem;
+  margin-bottom: 5vh;
   width: auto;
 }
 .info__img-2 {
@@ -99,7 +99,7 @@ body {
   width: 50%;
 }
 .info__heading-info {
-  margin-bottom: 1rem;
+  margin-bottom: 1vh;
   font-size: 3.5vw;
   font-family: "Henny Penny", cursive;
   text-transform: capitalize;
@@ -217,10 +217,10 @@ body {
 }
 .sponsors__heading-box {
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 10vh;
 }
 .sponsors__heading-text {
-  margin-bottom: 1rem;
+  margin-bottom: 1vh;
   font-size: 3.5vw;
   font-family: "Henny Penny", cursive;
   text-transform: capitalize;
@@ -241,9 +241,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10rem 8rem;
+  gap: 10vh 8vw;
   padding: 2rem;
-  margin-top: 10rem;
+  margin-top: 10vh;
 }
 .sponsors__sponsor-card {
   width: 15vw;
@@ -269,8 +269,8 @@ body {
   font-weight: 100;
 }
 .sponsors__icon {
-  height: 8vh;
-  width: 6vw;
+  height: 13vh;
+  width: 10vw;
   margin-bottom: 8vh;
 }
 
@@ -284,8 +284,8 @@ body {
 }
 .navigation__button {
   background-color: #f2f2f2;
-  height: 4rem;
-  width: 4rem;
+  height: 6vh;
+  width: 4vw;
   position: fixed;
   top: 1.5rem;
   right: 2rem;
@@ -296,8 +296,8 @@ body {
   cursor: pointer;
 }
 .navigation__background {
-  height: 3rem;
-  width: 3rem;
+  height: 5vh;
+  width: 3vw;
   border-radius: 50%;
   position: fixed;
   top: 2rem;
@@ -333,7 +333,7 @@ body {
   display: inline-block;
   font-family: "Henny Penny", cursive;
   font-size: 2vw;
-  padding: 0.5rem 1rem;
+  padding: 0.5vh 1vw;
   color: #f2f2f2;
   text-decoration: none;
   text-transform: uppercase;
@@ -342,9 +342,9 @@ body {
   transition: all 0.4s ease-in;
 }
 .navigation__link:link span, .navigation__link:visited span {
-  margin-right: 1rem;
+  margin-right: 1vw;
   display: inline-block;
-  padding-left: 1rem;
+  padding-left: 1vw;
 }
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -360,10 +360,10 @@ body {
 }
 .navigation__icon {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 3vh;
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-  width: 1.5rem;
+  width: 1.5vw;
   height: 2px;
   background-color: #0d0d0d;
   display: inline-block;
@@ -375,16 +375,16 @@ body {
   transition: all 0.2s;
 }
 .navigation__icon::before {
-  top: -0.6rem;
+  top: -1vh;
 }
 .navigation__icon::after {
-  top: 0.6rem;
+  top: 1vh;
 }
 .navigation__button:hover .navigation__icon::before {
-  top: -1rem;
+  top: -1.4vh;
 }
 .navigation__button:hover .navigation__icon::after {
-  top: 1rem;
+  top: 1.4vh;
 }
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent;
@@ -715,40 +715,27 @@ body {
   visibility: hidden;
   transition: all 0.3s;
 }
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-}
-.popup__close:link,
-.popup__close :visited {
-  color: #0d0d0d;
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  font-size: 3vw;
-  text-decoration: none;
-}
-.popup__box {
-  width: 35%;
-  background-image: linear-gradient(to right top, #8cbf3f, #a4c433, #bdc826, #d7ca19, #f2cc0f);
-  box-shadow: 0 2rem 4rem rgba(13, 13, 13, 0.2);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-}
 .popup__content {
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 33%;
+  width: 35%;
   padding: 1rem;
   gap: 4vh;
+  background-image: linear-gradient(to right top, #8cbf3f, #a4c433, #bdc826, #d7ca19, #f2cc0f);
+  box-shadow: 0 2rem 4rem rgba(13, 13, 13, 0.2);
   overflow: hidden;
+  border-radius: 5px;
+  opacity: 0;
+  transform: scale(0.25);
+  transition: all 0.5s 0.2s;
 }
 .popup__img {
   margin: 0 auto;
-  width: 14vh;
+  width: 8vw;
 }
 .popup__heading {
   font-family: "Pattaya", sans-serif;
@@ -766,13 +753,14 @@ body {
 }
 .popup__btn, .popup__btn:link, .popup__btn:visited {
   margin: 0 auto;
-  margin-top: 3vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   width: 15vw;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1vh 2vw;
   display: inline-block;
-  border-radius: 10rem;
+  border-radius: 5rem;
   transition: all 0.2s;
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -804,6 +792,26 @@ body {
   left: 0%;
   z-index: -1;
   transition: all 0.4s;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__content {
+  opacity: 1;
+  transform: scale(1);
+}
+.popup__close:link,
+.popup__close :visited {
+  color: #0d0d0d;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 3vw;
+  text-decoration: none;
+}
+.popup__close:hover {
+  color: #9453a6;
 }
 
 .color {
