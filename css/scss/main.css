@@ -246,10 +246,9 @@ body {
   margin-top: 10rem;
 }
 .sponsors__sponsor-card {
-  height: 45vh;
   width: 15vw;
   background-color: rgba(242, 204, 15, 0.6);
-  padding: 5rem 0.5rem;
+  padding: 5vh 0.5vw;
   text-align: center;
   border-radius: 1.5rem;
   box-shadow: 0 1.5rem 4rem rgba(13, 13, 13, 0.4);
@@ -270,9 +269,9 @@ body {
   font-weight: 100;
 }
 .sponsors__icon {
-  height: 10vh;
+  height: 8vh;
   width: 6vw;
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
 }
 
 .clip-path {
@@ -731,7 +730,6 @@ body {
 }
 .popup__box {
   width: 35%;
-  height: 50vh;
   background-image: linear-gradient(to right top, #8cbf3f, #a4c433, #bdc826, #d7ca19, #f2cc0f);
   box-shadow: 0 2rem 4rem rgba(13, 13, 13, 0.2);
   position: absolute;
