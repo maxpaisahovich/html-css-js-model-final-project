@@ -7,9 +7,9 @@
     width: 25%;
     padding: 1rem;
     margin: 0 auto;
-    clip-path: circle(50% at 50% 50%);
   }
+
   &__mayor-img {
-    width: 35vw;
+    clip-path: circle(50% at 50% 50%);
   }
 }

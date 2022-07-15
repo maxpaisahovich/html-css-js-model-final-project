@@ -1256,9 +1256,8 @@ body {
   width: 25%;
   padding: 1rem;
   margin: 0 auto;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
 }
 .about__mayor-img {
-  width: 35vw;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }/*# sourceMappingURL=main.css.map */
