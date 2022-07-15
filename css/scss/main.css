@@ -7,6 +7,21 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+}
 
 body {
   min-height: 100vh;
@@ -42,6 +57,11 @@ body {
   text-shadow: rgb(0, 204, 41) 2px 2px 2px;
   -webkit-animation: moveInLeft 1s ease-out;
           animation: moveInLeft 1s ease-out;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 10vh;
+  }
 }
 
 @-webkit-keyframes moveInLeft {
@@ -216,7 +236,7 @@ body {
 .sponsors {
   height: 100%;
   width: 100%;
-  margin-top: 15vh;
+  margin-top: 8rem;
 }
 .sponsors__heading-box {
   margin: 0 auto;
@@ -474,6 +494,7 @@ body {
 }
 
 .slider {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 10vh;
@@ -481,7 +502,7 @@ body {
 
 .slider-headingBox {
   margin: 0 auto;
-  margin-bottom: 5vh;
+  margin-bottom: 5rem;
 }
 .slider-headingBox__heading {
   font-size: 3.5vw;
@@ -497,10 +518,24 @@ body {
 
 .slideshow-container {
   width: 80%;
-  max-height: 100vh;
   position: relative;
   margin: 0 auto;
   margin-top: 12vh;
+}
+@media only screen and (max-width: 1200px) {
+  .slideshow-container {
+    height: 45vh;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .slideshow-container {
+    height: 85%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .slideshow-container {
+    height: 50%;
+  }
 }
 
 .text {
@@ -894,51 +929,4 @@ body {
 }
 .color::after {
   background-color: #9453a6;
-}
-
-.hamburger {
-  display: none;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
-
-@media only screen and (max-width: 768px) {
-  .navigation__list {
-    position: fixed;
-    right: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-  .navigation__list__item {
-    margin: 2.5rem 0;
-  }
-  .navigation__list .active {
-    right: 0;
-  }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
 }/*# sourceMappingURL=main.css.map */

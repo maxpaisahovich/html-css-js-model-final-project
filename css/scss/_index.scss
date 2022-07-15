@@ -6,6 +6,17 @@
 
 html {
   font-size: 62.5%;
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (min-width: 900px) {
+    font-size: 50%;
+  }
+  @media only screen and (min-width: 600px) {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -51,6 +62,10 @@ body {
     color: rgba(159, 86, 215, 0.99);
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
     animation: moveInLeft 1s ease-out;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: 10vh;
   }
 }
 
@@ -191,7 +206,7 @@ body {
 .sponsors {
   height: 100%;
   width: 100%;
-  margin-top: 15vh;
+  margin-top: 8rem;
 
   &__heading-box {
     margin: 0 auto;
