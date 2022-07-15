@@ -1,0 +1,15 @@
+.about {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  &__mayor-info {
+    width: 25%;
+    padding: 1rem;
+    margin: 0 auto;
+    clip-path: circle(50% at 50% 50%);
+  }
+  &__mayor-img {
+    width: 35vw;
+  }
+}
