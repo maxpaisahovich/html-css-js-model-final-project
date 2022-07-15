@@ -13,6 +13,7 @@
   &__content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     position: absolute;
     top: 25%;
@@ -40,6 +41,8 @@
       width: 80%;
       left: 10%;
       top: 20%;
+      gap: 2vh;
+      padding: 2rem;
     }
   }
 
@@ -48,7 +51,7 @@
     width: 8vw;
 
     @media only screen and (max-width: 600px) {
-      width: 80%;
+      width: 50%;
     }
   }
 
