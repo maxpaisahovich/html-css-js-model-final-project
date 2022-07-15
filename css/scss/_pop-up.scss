@@ -34,11 +34,22 @@
     opacity: 0;
     transform: scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @media only screen and (max-width: 600px) {
+      height: 50vh;
+      width: 80%;
+      left: 10%;
+      top: 20%;
+    }
   }
 
   &__img {
     margin: 0 auto;
     width: 8vw;
+
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+    }
   }
 
   &__heading {
@@ -47,12 +58,20 @@
     font-size: 1.7vw;
     color: rgba(159, 86, 215, 0.99);
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
+
+    @media only screen and(max-width:600px) {
+      font-size: 10vw;
+    }
   }
 
   &__paragraph {
     font-family: $body-font;
     font-size: 1.2vw;
     hyphens: auto;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 4vw;
+    }
   }
 
   &__btn {
@@ -74,6 +93,11 @@
       font-size: 1.4vw;
       border: none;
       cursor: pointer;
+
+      @media only screen and (max-width: 600px) {
+        width: 45vw;
+        font-size: 5vw;
+      }
     }
 
     &:hover {
@@ -126,6 +150,10 @@
       right: 1.5rem;
       font-size: 3vw;
       text-decoration: none;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 8vw;
+      }
     }
 
     &:hover {
