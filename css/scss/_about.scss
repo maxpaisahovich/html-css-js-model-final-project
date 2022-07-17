@@ -1,7 +1,14 @@
 .about {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    gap: 2vh;
+  }
 
   &__mayor-info {
     width: 100%;
@@ -10,6 +17,174 @@
   }
 
   &__mayor-img {
+    width: 25vw;
     clip-path: circle(50% at 50% 50%);
+
+    @media only screen and (max-width: 600px) {
+      width: 45vw;
+    }
+  }
+
+  &__caption {
+    font-family: $body-font;
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: rgba(159, 86, 215, 0.99);
+    text-shadow: rgb(0, 204, 41) 2px 2px 2px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 3vw;
+    }
+  }
+
+  &__heading {
+    font-family: $head-font-1;
+    font-size: 4vw;
+    color: rgba(159, 86, 215, 0.99);
+    text-shadow: rgb(0, 204, 41) 2px 2px 2px;
+
+    @media only screen and(max-width:600px) {
+      font-size: 6vw;
+    }
+
+    span {
+      letter-spacing: -0.2em;
+    }
+  }
+
+  &__paragraph {
+    font-family: $body-font;
+    font-size: 1.4vw;
+    text-align: justify;
+    padding: 3rem;
+
+    @media only screen and(max-width:600px) {
+      font-size: 3vw;
+      font-weight: 600;
+      text-align: start;
+    }
+  }
+
+  &__historical-img {
+    width: 35vw;
+    float: left;
+    margin: 0 2rem 1rem 0;
+
+    @media only screen and (max-width: 600px) {
+      width: 45vw;
+    }
+  }
+  &__historical-img-2 {
+    width: 35vw;
+    float: right;
+    margin: 2rem 0 2rem 2rem;
+
+    @media only screen and (max-width: 600px) {
+      width: 45vw;
+    }
+  }
+}
+
+.blur:hover span {
+  animation: blur 1s infinite;
+  transform-origin: center center;
+  display: inline-block;
+}
+
+.blur span:nth-child(1) {
+  animation-delay: 0s;
+}
+.blur span:nth-child(2) {
+  animation-delay: 0.075s;
+}
+.blur span:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.blur span:nth-child(4) {
+  animation-delay: 0.225s;
+}
+.blur span:nth-child(5) {
+  animation-delay: 0.3s;
+}
+.blur span:nth-child(6) {
+  animation-delay: 0.375s;
+}
+.blur span:nth-child(7) {
+  animation-delay: 0.45s;
+}
+.blur span:nth-child(8) {
+  animation-delay: 0.525s;
+}
+.blur span:nth-child(9) {
+  animation-delay: 0.6s;
+}
+.blur span:nth-child(10) {
+  animation-delay: 0.675s;
+}
+.blur span:nth-child(11) {
+  animation-delay: 0.745s;
+}
+.blur span:nth-child(12) {
+  animation-delay: 0.825s;
+}
+.blur span:nth-child(13) {
+  animation-delay: 0.9s;
+}
+.blur span:nth-child(14) {
+  animation-delay: 0.975s;
+}
+.blur span:nth-child(15) {
+  animation-delay: 1.045s;
+}
+.blur span:nth-child(16) {
+  animation-delay: 1.15s;
+}
+.blur span:nth-child(17) {
+  animation-delay: 1.225s;
+}
+.blur span:nth-child(18) {
+  animation-delay: 1.3s;
+}
+.blur span:nth-child(19) {
+  animation-delay: 1.375s;
+}
+.blur span:nth-child(20) {
+  animation-delay: 1.445s;
+}
+.blur span:nth-child(21) {
+  animation-delay: 1.525s;
+}
+.blur span:nth-child(22) {
+  animation-delay: 1.6s;
+}
+.blur span:nth-child(23) {
+  animation-delay: 1.675s;
+}
+.blur span:nth-child(24) {
+  animation-delay: 1.745s;
+}
+.blur span:nth-child(25) {
+  animation-delay: 1.825s;
+}
+.blur span:nth-child(26) {
+  animation-delay: 1.9s;
+}
+.blur span:nth-child(27) {
+  animation-delay: 1.975s;
+}
+
+@keyframes blur {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    filter: blur(3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
