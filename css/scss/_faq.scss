@@ -1,0 +1,108 @@
+.accordion-body {
+  font-family: $body-font;
+
+  &__accordion {
+    width: 47.5vw;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+    box-shadow: 0 2rem 4rem black;
+    border-radius: 5px;
+
+    @media only screen and(max-width:600px) {
+      width: 70vw;
+      padding: 2rem 2rem;
+    }
+  }
+
+  &__heading {
+    font-size: 2.5vw;
+    text-align: center;
+    margin-bottom: 2.5vh;
+    color: rgba(159, 86, 215, 0.99);
+    text-shadow: rgb(0, 204, 41) 2px 2px 2px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 8vw;
+    }
+  }
+
+  &__container {
+    position: relative;
+    margin: 10px 10px;
+
+    hr {
+      width: 100;
+      margin-left: 0;
+      border: 1px solid grey;
+    }
+  }
+
+  &__label {
+    height: 6vh;
+    position: relative;
+    background-color: white;
+    padding: 10px 0;
+    font-size: 30px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 600px) {
+      height: 2.5vh;
+      padding: 2px 0;
+      font-size: 3vw;
+    }
+
+    &:before {
+      content: "+";
+      color: black;
+      position: absolute;
+      top: 50%;
+      right: -5px;
+      font-size: 30px;
+      transform: translateY(-50%);
+
+      @media only screen and (max-width: 600px) {
+        font-size: 4vw;
+      }
+    }
+  }
+  .active &__content {
+    height: 150px;
+
+    @media only screen and (max-width: 600px) {
+      height: 8vh;
+    }
+  }
+  .active &__label::before {
+    content: "-";
+    font-size: 30px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 4vw;
+    }
+  }
+  &__content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 41.5vw;
+    overflow: hidden;
+    transition: 0.5s;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 2.2vw;
+      width: 55vw;
+    }
+
+    p {
+      margin-top: 2vh;
+
+      @media only screen and (max-width: 600px) {
+        margin-top: 1vh;
+      }
+    }
+  }
+}

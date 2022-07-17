@@ -996,7 +996,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .popup__paragraph {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 }
 .popup__btn, .popup__btn:link, .popup__btn:visited {
@@ -1688,5 +1688,115 @@ img.hover-shadow {
   .video__mobileAdjustment {
     height: 25vh;
     width: 65vw;
+  }
+}
+
+.accordion-body {
+  font-family: "Roboto", sans-serif;
+}
+.accordion-body__accordion {
+  width: 47.5vw;
+  margin: 90px auto;
+  color: black;
+  background-color: white;
+  padding: 45px 45px;
+  box-shadow: 0 2rem 4rem black;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .accordion-body__accordion {
+    width: 70vw;
+    padding: 2rem 2rem;
+  }
+}
+.accordion-body__heading {
+  font-size: 2.5vw;
+  text-align: center;
+  margin-bottom: 2.5vh;
+  color: rgba(159, 86, 215, 0.99);
+  text-shadow: rgb(0, 204, 41) 2px 2px 2px;
+}
+@media only screen and (max-width: 600px) {
+  .accordion-body__heading {
+    font-size: 8vw;
+  }
+}
+.accordion-body__container {
+  position: relative;
+  margin: 10px 10px;
+}
+.accordion-body__container hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+.accordion-body__label {
+  height: 6vh;
+  position: relative;
+  background-color: white;
+  padding: 10px 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .accordion-body__label {
+    height: 2.5vh;
+    padding: 2px 0;
+    font-size: 3vw;
+  }
+}
+.accordion-body__label:before {
+  content: "+";
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 600px) {
+  .accordion-body__label:before {
+    font-size: 4vw;
+  }
+}
+.active .accordion-body__content {
+  height: 150px;
+}
+@media only screen and (max-width: 600px) {
+  .active .accordion-body__content {
+    height: 8vh;
+  }
+}
+.active .accordion-body__label::before {
+  content: "-";
+  font-size: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .active .accordion-body__label::before {
+    font-size: 4vw;
+  }
+}
+.accordion-body__content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 41.5vw;
+  overflow: hidden;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 600px) {
+  .accordion-body__content {
+    font-size: 2.2vw;
+    width: 55vw;
+  }
+}
+.accordion-body__content p {
+  margin-top: 2vh;
+}
+@media only screen and (max-width: 600px) {
+  .accordion-body__content p {
+    margin-top: 1vh;
   }
 }/*# sourceMappingURL=main.css.map */
