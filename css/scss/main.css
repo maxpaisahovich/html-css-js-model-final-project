@@ -1472,7 +1472,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10vh 5vw;
+  gap: 10vh 1vw;
 }
 @media only screen and (max-width: 600px) {
   .row {
@@ -1561,6 +1561,7 @@ body {
   width: auto;
   padding: 16px;
   margin-top: -50px;
+  margin-left: -60rem;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -1623,12 +1624,13 @@ img.demo {
 
 img.hover-shadow {
   transition: 0.3s;
-  height: 30vh;
-  width: 35vw;
+  height: 35vh;
+  width: 30vw;
 }
 @media only screen and (max-width: 600px) {
   img.hover-shadow {
     height: 15vh;
+    width: 40vw;
   }
 }
 
@@ -1674,6 +1676,12 @@ img.hover-shadow {
 @media only screen and (max-width: 600px) {
   .video__video-box {
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .video__mobileAdjustment {
+    height: 30vh;
+    width: 40vw;
   }
 }
 @media only screen and (max-width: 600px) {
