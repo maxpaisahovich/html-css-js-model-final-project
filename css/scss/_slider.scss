@@ -65,10 +65,10 @@
   margin-top: 8vh;
 
   @media only screen and (max-width: 1200px) {
-    width: 100%;
+    width: 85%;
   }
   @media only screen and (max-width: 900px) {
-    height: 85%;
+    width: 85%;
   }
 
   @media only screen and (max-width: 600px) {
@@ -116,8 +116,8 @@
   animation-duration: 1.5s;
 }
 
-.prev,
-.next {
+.prev-1,
+.next-1 {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -132,13 +132,13 @@
   user-select: none;
 }
 
-.next {
+.next-1 {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover,
-.next:hover {
+.prev-1:hover,
+.next-1:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -160,6 +160,10 @@
 .slide-img {
   height: 95vh;
   width: 100%;
+
+  @media only screen and (max-width: 900px) {
+    height: 65vh;
+  }
 }
 
 .active,

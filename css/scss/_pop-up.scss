@@ -39,13 +39,17 @@
     transform: scale(0.25);
     transition: all 0.5s 0.2s;
 
-    @media only screen and (max-width: 600px) {
-      height: 50vh;
+    @media only screen and (max-width: 1200px) {
+      height: 60vh;
       width: 80%;
       left: 10%;
       top: 20%;
       gap: 1vh;
       padding: 2rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+      height: 50vh;
     }
   }
 
@@ -53,8 +57,13 @@
     margin: 0 auto;
     width: 15vw;
 
+    @media only screen and (max-width: 1200px) {
+      height: 20vh;
+      width: 30vw;
+    }
+
     @media only screen and (max-width: 600px) {
-      width: 50%;
+      width: 40vw;
     }
   }
 
@@ -64,6 +73,10 @@
     font-size: 2.8vw;
     color: rgba(159, 86, 215, 0.99);
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
+
+    @media only screen and(max-width:1200px) {
+      font-size: 6vw;
+    }
 
     @media only screen and(max-width:600px) {
       font-size: 10vw;
@@ -75,6 +88,10 @@
     font-size: 1.5vw;
     padding: 1rem;
     hyphens: auto;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 2.5vw;
+    }
 
     @media only screen and (max-width: 600px) {
       font-size: 3.5vw;
@@ -100,6 +117,11 @@
       font-size: 1.8vw;
       border: none;
       cursor: pointer;
+
+      @media only screen and (max-width: 1200px) {
+        width: 35vw;
+        font-size: 3vw;
+      }
 
       @media only screen and (max-width: 600px) {
         width: 45vw;
@@ -171,6 +193,10 @@
 
 .resize {
   width: 10vw;
+
+  @media only screen and (max-width: 900px) {
+    width: 18vw;
+  }
 
   @media only screen and (max-width: 600px) {
     width: 18vw;

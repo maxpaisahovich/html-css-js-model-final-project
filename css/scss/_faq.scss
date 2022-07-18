@@ -10,9 +10,17 @@
     box-shadow: 0 2rem 4rem black;
     border-radius: 5px;
 
+    @media only screen and(max-width:1200px) {
+      width: 65vw;
+      padding: 2rem 2rem;
+    }
+
+    @media only screen and(max-width:900px) {
+      width: 75vw;
+    }
+
     @media only screen and(max-width:600px) {
       width: 85vw;
-      padding: 2rem 2rem;
     }
   }
 
@@ -22,6 +30,10 @@
     margin-bottom: 2.5vh;
     color: rgba(159, 86, 215, 0.99);
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 6vw;
+    }
 
     @media only screen and (max-width: 600px) {
       font-size: 8vw;
@@ -47,10 +59,15 @@
     font-size: 30px;
     cursor: pointer;
 
-    @media only screen and (max-width: 600px) {
-      height: 2.5vh;
+    @media only screen and (max-width: 900px) {
+      height: 4vh;
       padding: 2px 0;
       font-size: 3vw;
+    }
+
+    @media only screen and (max-width: 600px) {
+      height: 2.5vh;
+      font-size: 3.5vw;
     }
 
     &:before {
@@ -87,15 +104,21 @@
     overflow: hidden;
     transition: 0.5s;
 
-    @media only screen and (max-width: 600px) {
-      font-size: 2.5vw;
-    }
-
     p {
       margin-top: 2vh;
 
+      @media only screen and (max-width: 1200px) {
+        font-size: 1.8vw;
+      }
+
+      @media only screen and (max-width: 900px) {
+        margin-top: 1.5vh;
+        font-size: 2.3vw;
+      }
+
       @media only screen and (max-width: 600px) {
         margin-top: 0.5vh;
+        font-size: 2.7vw;
       }
     }
   }

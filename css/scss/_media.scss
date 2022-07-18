@@ -29,6 +29,10 @@
   justify-content: center;
   gap: 10vh 1vw;
 
+  @media only screen and (max-width: 1200px) {
+    gap: 3vh 2vw;
+  }
+
   @media only screen and (max-width: 600px) {
     gap: 3vh 2vw;
   }
@@ -59,6 +63,10 @@
   padding: 0;
   max-width: 1200px;
 
+  @media only screen and (max-width: 1200px) {
+    margin-top: 2vh;
+  }
+
   @media only screen and (max-width: 600px) {
     margin-top: 25vh;
   }
@@ -67,6 +75,10 @@
 .model-img {
   height: 85vh;
   width: 100%;
+
+  @media only screen and (max-width: 1200px) {
+    height: 60vh;
+  }
 
   @media only screen and (max-width: 600px) {
     height: 30vh;
@@ -121,6 +133,11 @@
   user-select: none;
   -webkit-user-select: none;
 
+  @media only screen and (max-width: 1200px) {
+    top: 35%;
+    margin-left: -48vw;
+  }
+
   @media only screen and (max-width: 600px) {
     top: 55%;
     margin-left: -15rem;
@@ -137,7 +154,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.numbertext {
+.number-text {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -158,6 +175,11 @@ img.demo {
   height: 20vh;
   width: 16vw;
 
+  @media only screen and (max-width: 900px) {
+    height: 12.5vh;
+    width: 12.5vw;
+  }
+
   @media only screen and (max-width: 600px) {
     width: 30vw;
   }
@@ -172,6 +194,11 @@ img.hover-shadow {
   transition: 0.3s;
   height: 35vh;
   width: 30vw;
+
+  @media only screen and (max-width: 900px) {
+    height: 18vh;
+    width: 35vw;
+  }
 
   @media only screen and (max-width: 600px) {
     height: 15vh;

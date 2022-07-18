@@ -1,0 +1,40 @@
+.contact-us {
+  height: 100%;
+  width: 100%;
+
+  &__inputsContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+
+    div {
+      margin: 0 auto;
+
+      label {
+        font-family: $body-font;
+        font-size: 1.6vw;
+        font-weight: 100;
+      }
+
+      input {
+        height: 5vh;
+        width: 15vw;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.7);
+        margin-top: 2vh;
+      }
+
+      textarea {
+        height: 5vh;
+        width: 15vw;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.7);
+        margin-top: 2vh;
+      }
+    }
+  }
+}

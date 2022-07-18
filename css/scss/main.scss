@@ -20,8 +20,4 @@ $body-font: "Roboto", sans-serif;
 @import "about";
 @import "media";
 @import "faq";
-
-//media only screen and (max-width:600px) {} phone
-//media only screen and (max-width:900px) {}tab-port
-//media only screen and (max-width:1200px) {}tab-land
-//media only screen and (min-width:1800px) {}desktop
+@import "contact-us";
