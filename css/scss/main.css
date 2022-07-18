@@ -302,6 +302,16 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (max-width: 1200px) {
+  .footer__follow {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .footer__follow {
+    width: 45%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .footer__follow {
     gap: 1rem;
@@ -309,6 +319,12 @@ body {
 }
 .footer__follow p {
   margin-top: 5vh;
+}
+@media only screen and (max-width: 900px) {
+  .footer__follow p {
+    margin-top: 1vh;
+    font-size: 2.5vw;
+  }
 }
 @media only screen and (max-width: 600px) {
   .footer__follow p {
@@ -333,6 +349,11 @@ body {
   font-weight: 100;
   font-size: 3vw;
 }
+@media only screen and (max-width: 900px) {
+  .footer__follow-head {
+    font-size: 7.5vw;
+  }
+}
 @media only screen and (max-width: 600px) {
   .footer__follow-head {
     font-size: 6vw;
@@ -350,9 +371,14 @@ body {
   height: 10vh;
   transition: all 0.8s;
 }
+@media only screen and (max-width: 900px) {
+  .footer__img {
+    height: 7vh;
+  }
+}
 @media only screen and (max-width: 600px) {
   .footer__img {
-    height: 3vh;
+    height: 4vh;
   }
 }
 .footer__img:hover {
@@ -365,14 +391,28 @@ body {
   gap: 8vh;
   font-family: "Roboto", sans-serif;
 }
+@media only screen and (max-width: 1200px) {
+  .footer__info {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .footer__info {
+    width: 45%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .footer__info {
-    margin-top: 1vh;
     gap: 1px;
   }
 }
 .footer__text {
   font-size: 1.5vw;
+}
+@media only screen and (max-width: 900px) {
+  .footer__text {
+    font-size: 3.5vw;
+  }
 }
 @media only screen and (max-width: 600px) {
   .footer__text {
@@ -382,8 +422,20 @@ body {
 .footer__activity {
   list-style: none;
   text-align: justify;
-  margin-left: 18rem;
-  margin-top: 1rem;
+  margin-left: 15vw;
+  margin-top: 1vh;
+}
+@media only screen and (max-width: 1200px) {
+  .footer__activity {
+    margin-left: 5vw;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .footer__activity {
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 @media only screen and (max-width: 600px) {
   .footer__activity {
@@ -396,7 +448,20 @@ body {
   font-size: 2.5vw;
   font-family: "Henny Penny", cursive;
   font-weight: bolder;
-  margin-bottom: 6vh;
+  margin-bottom: 2vh;
+}
+@media only screen and (max-width: 1200px) {
+  .footer__activity :nth-child(1) {
+    font-size: 3.5vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .footer__activity :nth-child(1) {
+    font-size: 5vw;
+    margin-bottom: 5vh;
+  }
 }
 @media only screen and (max-width: 600px) {
   .footer__activity :nth-child(1) {
@@ -405,8 +470,21 @@ body {
   }
 }
 .footer__activity :not(:nth-child(1)) {
+  font-family: "Roboto", sans-serif;
   font-size: 1.6vw;
   margin-bottom: 1.5vh;
+}
+@media only screen and (max-width: 1200px) {
+  .footer__activity :not(:nth-child(1)) {
+    margin-bottom: 0.5vh;
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .footer__activity :not(:nth-child(1)) {
+    margin-bottom: 0.5vh;
+    font-size: 3vw;
+  }
 }
 @media only screen and (max-width: 600px) {
   .footer__activity :not(:nth-child(1)) {
@@ -1156,7 +1234,7 @@ body {
   .nav-menu {
     position: fixed;
     right: -100%;
-    top: 5rem;
+    top: 7.4rem;
     flex-direction: column;
     background-image: linear-gradient(to right top, #9453a6, #9d4cb5, #a744c3, #b038d2, #b928e1);
     width: 100%;
@@ -1464,7 +1542,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .gallery__heading {
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
 }
 
@@ -1661,7 +1739,7 @@ img.hover-shadow {
 }
 @media only screen and (max-width: 600px) {
   .video__heading {
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
 }
 .video__heading span {
@@ -1705,7 +1783,7 @@ img.hover-shadow {
 }
 @media only screen and (max-width: 600px) {
   .accordion-body__accordion {
-    width: 70vw;
+    width: 85vw;
     padding: 2rem 2rem;
   }
 }
@@ -1759,14 +1837,6 @@ img.hover-shadow {
     font-size: 4vw;
   }
 }
-.active .accordion-body__content {
-  height: 150px;
-}
-@media only screen and (max-width: 600px) {
-  .active .accordion-body__content {
-    height: 8vh;
-  }
-}
 .active .accordion-body__label::before {
   content: "-";
   font-size: 30px;
@@ -1782,14 +1852,13 @@ img.hover-shadow {
   height: 0;
   font-size: 20px;
   text-align: justify;
-  width: 41.5vw;
+  width: 100%;
   overflow: hidden;
   transition: 0.5s;
 }
 @media only screen and (max-width: 600px) {
   .accordion-body__content {
-    font-size: 2.2vw;
-    width: 55vw;
+    font-size: 2.5vw;
   }
 }
 .accordion-body__content p {
@@ -1797,6 +1866,14 @@ img.hover-shadow {
 }
 @media only screen and (max-width: 600px) {
   .accordion-body__content p {
-    margin-top: 1vh;
+    margin-top: 0.5vh;
+  }
+}
+.active .accordion-body__content {
+  height: 150px;
+}
+@media only screen and (max-width: 600px) {
+  .active .accordion-body__content {
+    height: 8vh;
   }
 }/*# sourceMappingURL=main.css.map */

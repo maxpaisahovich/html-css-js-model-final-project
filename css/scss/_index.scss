@@ -309,12 +309,24 @@ body {
     flex-direction: column;
     justify-content: center;
 
+    @media only screen and (max-width: 1200px) {
+      width: 45%;
+    }
+
+    @media only screen and (max-width: 900px) {
+      width: 45%;
+    }
     @media only screen and (max-width: 600px) {
       gap: 1rem;
     }
 
     p {
       margin-top: 5vh;
+
+      @media only screen and (max-width: 900px) {
+        margin-top: 1vh;
+        font-size: 2.5vw;
+      }
 
       @media only screen and (max-width: 600px) {
         margin-top: 1vh;
@@ -340,6 +352,10 @@ body {
     font-weight: 100;
     font-size: 3vw;
 
+    @media only screen and (max-width: 900px) {
+      font-size: 7.5vw;
+    }
+
     @media only screen and (max-width: 600px) {
       font-size: 6vw;
     }
@@ -357,8 +373,12 @@ body {
     height: 10vh;
     transition: all 0.8s;
 
+    @media only screen and (max-width: 900px) {
+      height: 7vh;
+    }
+
     @media only screen and (max-width: 600px) {
-      height: 3vh;
+      height: 4vh;
     }
 
     &:hover {
@@ -373,15 +393,23 @@ body {
     gap: 8vh;
     font-family: $body-font;
 
+    @media only screen and (max-width: 1200px) {
+      width: 45%;
+    }
+
+    @media only screen and (max-width: 900px) {
+      width: 45%;
+    }
     @media only screen and (max-width: 600px) {
-      margin-top: 1vh;
       gap: 1px;
     }
   }
 
   &__text {
     font-size: 1.5vw;
-
+    @media only screen and (max-width: 900px) {
+      font-size: 3.5vw;
+    }
     @media only screen and (max-width: 600px) {
       font-size: 3vw;
     }
@@ -390,8 +418,18 @@ body {
   &__activity {
     list-style: none;
     text-align: justify;
-    margin-left: 18rem;
-    margin-top: 1rem;
+    margin-left: 15vw;
+    margin-top: 1vh;
+
+    @media only screen and (max-width: 1200px) {
+      margin-left: 5vw;
+      margin-top: 0;
+    }
+
+    @media only screen and (max-width: 900px) {
+      margin-left: 0;
+      margin-top: 0;
+    }
 
     @media only screen and (max-width: 600px) {
       font-size: 3vw;
@@ -403,8 +441,17 @@ body {
       font-size: 2.5vw;
       font-family: $head-font-1;
       font-weight: bolder;
-      margin-bottom: 6vh;
+      margin-bottom: 2vh;
 
+      @media only screen and (max-width: 1200px) {
+        font-size: 3.5vw;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+      }
+      @media only screen and (max-width: 900px) {
+        font-size: 5vw;
+        margin-bottom: 5vh;
+      }
       @media only screen and (max-width: 600px) {
         font-size: 4.5vw;
         margin-bottom: 1vh;
@@ -412,8 +459,19 @@ body {
     }
 
     :not(:nth-child(1)) {
+      font-family: $body-font;
       font-size: 1.6vw;
       margin-bottom: 1.5vh;
+
+      @media only screen and (max-width: 1200px) {
+        margin-bottom: 0.5vh;
+        font-size: 2.5vw;
+      }
+
+      @media only screen and (max-width: 900px) {
+        margin-bottom: 0.5vh;
+        font-size: 3vw;
+      }
       @media only screen and (max-width: 600px) {
         margin-bottom: 0.5vh;
         font-size: 3vw;
