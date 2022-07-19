@@ -41,15 +41,15 @@
 
     @media only screen and (max-width: 1200px) {
       height: 60vh;
-      width: 80%;
-      left: 10%;
+      width: 70%;
+      left: 15%;
       top: 20%;
-      gap: 1vh;
+      gap: 2vh;
       padding: 2rem;
     }
 
     @media only screen and (max-width: 900px) {
-      height: 50vh;
+      height: auto;
     }
   }
 
@@ -58,12 +58,11 @@
     width: 15vw;
 
     @media only screen and (max-width: 1200px) {
-      height: 20vh;
-      width: 30vw;
+      width: 20vw;
     }
 
     @media only screen and (max-width: 600px) {
-      width: 40vw;
+      width: 35vw;
     }
   }
 
@@ -75,11 +74,11 @@
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
 
     @media only screen and(max-width:1200px) {
-      font-size: 6vw;
+      font-size: 5vw;
     }
 
     @media only screen and(max-width:600px) {
-      font-size: 10vw;
+      font-size: 8vw;
     }
   }
 
@@ -90,11 +89,11 @@
     hyphens: auto;
 
     @media only screen and (max-width: 1200px) {
-      font-size: 2.5vw;
+      font-size: 2vw;
     }
 
     @media only screen and (max-width: 600px) {
-      font-size: 3.5vw;
+      font-size: 3vw;
     }
   }
 
@@ -119,13 +118,13 @@
       cursor: pointer;
 
       @media only screen and (max-width: 1200px) {
-        width: 35vw;
-        font-size: 3vw;
+        width: 20vw;
+        font-size: 2.2vw;
       }
 
       @media only screen and (max-width: 600px) {
-        width: 45vw;
-        font-size: 5vw;
+        width: 30vw;
+        font-size: 2.5vw;
       }
     }
 
@@ -195,11 +194,11 @@
   width: 10vw;
 
   @media only screen and (max-width: 900px) {
-    width: 18vw;
+    width: 15vw;
   }
 
   @media only screen and (max-width: 600px) {
-    width: 18vw;
+    width: 20vw;
   }
 }
 

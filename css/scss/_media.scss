@@ -6,19 +6,20 @@
 
   &__heading {
     margin: 0 auto;
+    margin-bottom: 5vh;
     width: 50%;
+    font-family: $head-font-1;
+    font-size: 4vw;
+    text-transform: capitalize;
     color: rgba(159, 86, 215, 0.99);
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
-    font-family: $head-font-1;
-    font-size: 5vw;
-    margin-bottom: 5vh;
 
     span {
       letter-spacing: -0.2em;
     }
 
     @media only screen and(max-width:600px) {
-      font-size: 6.5vw;
+      font-size: 5vw;
     }
   }
 }
@@ -73,7 +74,7 @@
 }
 
 .model-img {
-  height: 85vh;
+  height: 70vh;
   width: 100%;
 
   @media only screen and (max-width: 1200px) {
@@ -172,8 +173,8 @@
 
 img.demo {
   opacity: 0.6;
-  height: 20vh;
-  width: 16vw;
+  height: 15vh;
+  width: 15vw;
 
   @media only screen and (max-width: 900px) {
     height: 12.5vh;
@@ -225,13 +226,14 @@ img.hover-shadow {
   }
 
   &__heading {
+    font-family: $head-font-1;
+    font-size: 4vw;
+    text-transform: capitalize;
     color: rgba(159, 86, 215, 0.99);
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
-    font-family: $head-font-1;
-    font-size: 5vw;
 
     @media only screen and (max-width: 600px) {
-      font-size: 6.5vw;
+      font-size: 5vw;
     }
     span {
       letter-spacing: -0.2em;

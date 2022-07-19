@@ -6,6 +6,10 @@
   gap: 10vh;
   text-align: center;
 
+  @media only screen and (max-width: 900px) {
+    gap: 4vh;
+  }
+
   @media only screen and (max-width: 600px) {
     gap: 2vh;
   }
@@ -39,12 +43,13 @@
 
   &__heading {
     font-family: $head-font-1;
-    font-size: 4vw;
+    font-size: 3vw;
+    text-transform: capitalize;
     color: rgba(159, 86, 215, 0.99);
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
 
     @media only screen and(max-width:600px) {
-      font-size: 6vw;
+      font-size: 4.5vw;
     }
 
     span {
@@ -54,7 +59,7 @@
 
   &__paragraph {
     font-family: $body-font;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     text-align: justify;
     padding: 3rem;
 
