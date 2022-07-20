@@ -1679,7 +1679,7 @@ body {
   .prev,
 .next {
     top: 55%;
-    margin-left: -17.5rem;
+    margin-left: -18rem;
   }
 }
 
@@ -1689,7 +1689,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .next {
-    right: -1.1rem;
+    right: -1.5rem;
   }
 }
 
