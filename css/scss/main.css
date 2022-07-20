@@ -382,7 +382,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 8vh;
+  gap: 9vh;
 }
 @media only screen and (max-width: 1200px) {
   .footer__follow {
@@ -391,21 +391,16 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .footer__follow {
-    gap: 3.5vh;
+    gap: 3.2vh;
   }
 }
 .footer__follow p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
 }
 @media only screen and (max-width: 1200px) {
   .footer__follow p {
     font-size: 2vw;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .footer__follow p {
-    font-size: 1.8vw;
   }
 }
 .footer__follow-head {
@@ -1893,7 +1888,7 @@ img.hover-shadow {
   position: relative;
   background-color: white;
   padding: 10px 0;
-  font-size: 30px;
+  font-size: 2vw;
   cursor: pointer;
 }
 @media only screen and (max-width: 900px) {
@@ -1936,7 +1931,7 @@ img.hover-shadow {
   position: relative;
   background: white;
   height: 0;
-  font-size: 20px;
+  font-size: 1.4vw;
   text-align: justify;
   width: 100%;
   overflow: hidden;
@@ -2152,8 +2147,8 @@ img.hover-shadow {
   .mobile {
     display: inline-block;
     margin: 0 auto;
-    height: 4vh;
-    width: 40vw;
+    height: 3.5rem;
+    width: 10rem;
   }
 }
 
@@ -2178,7 +2173,7 @@ img.hover-shadow {
   .mobile-text {
     display: inline-block;
     margin: 0 auto;
-    height: 10vh;
-    width: 40vw;
+    height: 8rem;
+    width: 14rem;
   }
 }/*# sourceMappingURL=main.css.map */
