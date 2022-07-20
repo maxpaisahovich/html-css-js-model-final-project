@@ -1553,11 +1553,6 @@ body {
 .gallery__heading span {
   letter-spacing: -0.2em;
 }
-@media only screen and (max-width: 600px) {
-  .gallery__heading {
-    font-size: 4.5vw;
-  }
-}
 
 .row {
   display: flex;
@@ -1566,11 +1561,6 @@ body {
   gap: 10vh 1vw;
 }
 @media only screen and (max-width: 1200px) {
-  .row {
-    gap: 3vh 2vw;
-  }
-}
-@media only screen and (max-width: 600px) {
   .row {
     gap: 3vh 2vw;
   }
@@ -1793,7 +1783,7 @@ img.hover-shadow {
 }
 @media only screen and (max-width: 600px) {
   .video__heading {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 }
 .video__heading span {

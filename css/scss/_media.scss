@@ -17,10 +17,6 @@
     span {
       letter-spacing: -0.2em;
     }
-
-    @media only screen and(max-width:600px) {
-      font-size: 4.5vw;
-    }
   }
 }
 
@@ -31,10 +27,6 @@
   gap: 10vh 1vw;
 
   @media only screen and (max-width: 1200px) {
-    gap: 3vh 2vw;
-  }
-
-  @media only screen and (max-width: 600px) {
     gap: 3vh 2vw;
   }
 }
@@ -238,7 +230,7 @@ img.hover-shadow {
     text-shadow: rgb(0, 204, 41) 2px 2px 2px;
 
     @media only screen and (max-width: 600px) {
-      font-size: 5vw;
+      font-size: 4.5vw;
     }
     span {
       letter-spacing: -0.2em;
