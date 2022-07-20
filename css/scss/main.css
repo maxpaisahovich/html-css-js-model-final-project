@@ -1826,11 +1826,6 @@ img.hover-shadow {
 .accordion-body {
   font-family: "Roboto", sans-serif;
 }
-@media only screen and (max-width: 600px) {
-  .accordion-body {
-    height: 70vh;
-  }
-}
 .accordion-body__accordion {
   width: 47.5vw;
   margin: 90px auto;
@@ -2018,11 +2013,6 @@ img.hover-shadow {
 @media only screen and (max-width: 900px) {
   .contact-us__inputsContainer {
     gap: 3vh;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .contact-us__inputsContainer {
-    gap: 2vh;
   }
 }
 .contact-us__inputsContainer label {
