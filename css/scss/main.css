@@ -1621,7 +1621,7 @@ body {
 
 .model-img {
   height: 70vh;
-  width: 100%;
+  width: 80%;
 }
 @media only screen and (max-width: 1200px) {
   .model-img {
@@ -1696,7 +1696,7 @@ body {
   .prev,
 .next {
     top: 55%;
-    margin-left: -15rem;
+    margin-left: -17.5rem;
   }
 }
 
@@ -1716,6 +1716,12 @@ body {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  left: 11rem;
+}
+@media only screen and (max-width: 600px) {
+  .number-text {
+    left: 2.5rem;
+  }
 }
 
 .caption-container {
