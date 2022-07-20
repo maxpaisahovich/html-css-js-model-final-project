@@ -1003,7 +1003,7 @@ body {
   position: absolute;
   top: 10%;
   left: 30%;
-  height: 80vh;
+  height: auto;
   width: 40%;
   padding: 1rem;
   gap: 4vh;
@@ -1017,17 +1017,11 @@ body {
 }
 @media only screen and (max-width: 1200px) {
   .popup__content {
-    height: 60vh;
     width: 70%;
     left: 15%;
     top: 20%;
     gap: 2vh;
     padding: 2rem;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .popup__content {
-    height: auto;
   }
 }
 .popup__img {
@@ -1063,7 +1057,7 @@ body {
 }
 .popup__paragraph {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   padding: 1rem;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;

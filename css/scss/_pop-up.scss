@@ -20,7 +20,7 @@
     position: absolute;
     top: 10%;
     left: 30%;
-    height: 80vh;
+    height: auto;
     width: 40%;
     padding: 1rem;
     gap: 4vh;
@@ -40,16 +40,11 @@
     transition: all 0.5s 0.2s;
 
     @media only screen and (max-width: 1200px) {
-      height: 60vh;
       width: 70%;
       left: 15%;
       top: 20%;
       gap: 2vh;
       padding: 2rem;
-    }
-
-    @media only screen and (max-width: 900px) {
-      height: auto;
     }
   }
 
@@ -84,7 +79,7 @@
 
   &__paragraph {
     font-family: $body-font;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     padding: 1rem;
     hyphens: auto;
 
