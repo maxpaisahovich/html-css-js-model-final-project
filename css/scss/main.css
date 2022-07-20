@@ -1981,7 +1981,7 @@ img.hover-shadow {
 }
 @media only screen and (max-width: 600px) {
   .contact-us {
-    height: 65vh;
+    height: 50rem;
     gap: 5vh;
   }
 }
