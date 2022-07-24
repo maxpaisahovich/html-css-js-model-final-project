@@ -875,8 +875,9 @@ body {
 }
 
 .text {
-  color: #f2f2f2;
   font-size: 1.5vw;
+  font-family: "Henny Penny", cursive;
+  color: #f2f2f2;
   padding: 0.8vh 1.2vw;
   position: absolute;
   bottom: 8px;
